@@ -1,0 +1,32 @@
+@media screen and (max-width: 1106px) {
+  .social-media-login button {
+    width: 75px;
+  }
+
+  .checkbox input {
+    margin-right: 10px;
+    margin-left: 21.5px;
+  }
+
+  footer {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1094px) {
+  .social-media-login button {
+    width: 74px;
+  }
+}
+
+@media screen and (max-width: 1082px) {
+  .wallpaper {
+    display: none;
+    width: 0%;
+  }
+
+  .form {
+    width: 100vw;
+    height: 100vh;
+  }
+}
