@@ -43,7 +43,7 @@
   border: none;
 }
 
-.loginInfo:hover {
+.loginInfo button:hover {
   filter: brightness(2);
   cursor: pointer;
 }
