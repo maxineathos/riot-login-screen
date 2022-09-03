@@ -3,7 +3,7 @@
 /*  setting container size/position and img directory */
 
 .wallpaper {
-  background-image: url("../img/wallpaper/1262722.jpg");
+  background-image: url("../../img/wallpaper/1262722.jpg");
   width: 75%;
   min-height: 100%;
   background-repeat: no-repeat;
