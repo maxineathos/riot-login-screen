@@ -1,0 +1,51 @@
+/* udyr wallpaper stylesheet */
+
+/*  setting container size/position and img directory */
+
+.wallpaper {
+  background-image: url("/img/wallpaper/1262722.jpg");
+  width: 75%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* tooltip */
+
+.bi-exclamation-diamond-fill {
+  font-size: 36px;
+  color: #d950e5;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.bi-exclamation-diamond-fill:hover {
+  filter: brightness(60%);
+}
+
+/* login info */
+
+.loginInfo {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  margin-right: 20px;
+  margin-top: 20px;
+  background-color: rgba(102, 102, 102, 0.1);
+  color: rgba(266, 266, 266, 0.6);
+  border: none;
+}
+
+.loginInfo:hover {
+  filter: brightness(2);
+  cursor: pointer;
+}
+
+.loginInfo i {
+  font-size: 26px;
+}

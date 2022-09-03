@@ -1,0 +1,111 @@
+/* ------------- desktop adjustments ------------- */
+
+@media screen and (max-width: 1079px) {
+  .extraInfo {
+    margin-top: 19%;
+  }
+
+  .loginButton {
+    margin-top: 35%;
+  }
+}
+
+@media screen and (max-width: 1012px) {
+  .socialMediaLogin button {
+    width: 31.9%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .socialMediaLogin button {
+    width: 31.7%;
+  }
+
+  .loginButton {
+    margin-top: 38%;
+  }
+
+  .extraInfo {
+    margin-top: 20%;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .socialMediaLogin button {
+    width: 31.3%;
+  }
+
+  .loginButton {
+    margin-top: 41%;
+  }
+
+  .extraInfo {
+    margin-top: 25%;
+  }
+}
+
+@media (min-width: 1012px) and (max-width: 1081px) {
+  .socialMediaLogin button {
+    width: 31.7%;
+  }
+}
+
+/* ------------- mobile first ------------- */
+
+/* android, ios, tablet */
+
+@media screen and (max-width: 768px) {
+  .wallpaper {
+    display: none;
+    width: 0%;
+  }
+
+  .interactiveElement {
+    width: 100%;
+    max-width: 100%;
+    background: #f9f9f9;
+  }
+
+  .information {
+    text-align: center;
+    margin-top: 5%%;
+  }
+
+  .information h3 {
+    margin-top: 3%;
+    font-weight: 600;
+  }
+
+  .socialMediaLogin button {
+    width: 32.1%;
+  }
+
+  .loginButton {
+    margin-top: 30%;
+  }
+
+  .extraInfo {
+    margin-top: 19%;
+  }
+
+  .sendUserJoin input[type="username"],
+  input[type="password"] {
+    letter-spacing: 0.5px;
+  }
+}
+
+@media screen and (max-width: 518px) {
+  .interactiveElement {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 4%;
+  }
+
+  .loginButton {
+    margin-top: 32%;
+  }
+
+  .extraInfo {
+    margin-top: 21%;
+  }
+}

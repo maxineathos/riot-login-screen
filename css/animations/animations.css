@@ -1,0 +1,94 @@
+/* ------ keep logged in checkbox ------- */
+
+/* when hover over the checkbox, the fill space and the text will be darker */
+
+.sendUserJoin input[type="username"]:hover,
+input[type="password"]:hover {
+  background-color: #e7e7e7;
+}
+
+.sendUserJoin input:hover::placeholder {
+  color: #8b8b8b;
+}
+
+/* -------- checkbox animations ---------- */
+
+/* when hovering the mouse over the box, there will be a small darkening of the white background of the box */
+
+.checkbox input:hover + label:before {
+  background-color: #e9e9e9;
+  filter: brightness(95%);
+}
+
+/* when selecting the checkbox, its background will be red and a white "check" icon will appear */
+
+.checkbox input:checked + label:before {
+  background-image: url(data:image/svg+xml;charset=utf8;base64,PHN2ZyB3aWR0aD0iMTkiIGhlaWdodD0iMTkiIHZpZXdCb3g9IjAgMCAxOSAxOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEuODQ3OTEgMTAuNTg1NEw4LjE3MzcyIDE2LjU5OTlMMTcuMjc2NCA1Ljk5NjEzIiBzdHJva2U9IiNGOUY5RjkiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K);
+  background-color: #c73033;
+  background-position: top;
+  background-size: 8px;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.checkbox input:checked:hover + label:before {
+  background-color: #c73033;
+}
+
+/* ---------- social media buttons ----------- */
+
+/* hover animation for social media login buttons */
+
+.socialMediaLogin button:hover {
+  cursor: pointer;
+}
+
+.facebook-button:hover {
+  background-color: #0966de;
+  box-shadow: inset 0 0 0 2px #0961d3;
+}
+
+.google-button:hover {
+  background: #f7f7f7;
+  box-shadow: inset 0 0 0 2px #eaeaea;
+}
+
+.apple-button:hover {
+  background-color: #141414;
+  box-shadow: inset 0 0 0 2px #202020;
+}
+
+/* only is possible click on login button if the input tags are filled */
+
+.loginButton button:disabled {
+  border: 2.5px #e9e9e9 solid;
+  background-color: transparent;
+  border-radius: 17px;
+  padding: 3px;
+  cursor: default;
+}
+.loginButton button:disabled:hover {
+  border: 2.5px #e9e9e9 solid;
+  background-color: transparent;
+  border-radius: 17px;
+  padding: 3px;
+  cursor: default;
+}
+
+.loginButton button:hover {
+  background-color: #bc252a;
+}
+
+/* username/password label gets dark when hovering */
+
+.sendUserJoin input:hover + #dataLabel {
+  color: #8c8c8c;
+}
+
+/* float label */
+
+.sendUserJoin input:focus + #dataLabel,
+.sendUserJoin input:valid + #dataLabel {
+  top: -42px;
+  left: 8px;
+}

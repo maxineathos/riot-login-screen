@@ -1,0 +1,199 @@
+/* ------- page adjustment -------- */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+}
+
+.container {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  flex-wrap: nowrap;
+}
+
+/* --------- form container --------- */
+
+.interactiveElement {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  min-height: 100%;
+  max-width: 25%;
+}
+
+.formElement {
+  margin-top: 60px;
+  margin-bottom: 10px;
+  place-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* form header */
+
+.information {
+  text-align: center;
+  margin-top: 20%;
+  margin: 0;
+  padding: 0;
+}
+
+.information h3 {
+  margin-top: 15%;
+  font-weight: 600;
+  margin-bottom: 6%;
+}
+
+/* form */
+
+.sendUserJoin {
+  width: 250px;
+  max-width: 100%;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+/* adjustment for username and password space */
+
+.sendUserJoin input[type="username"],
+input[type="password"] {
+  box-sizing: border-box;
+  width: 100%;
+  height: 45px;
+  background-color: #ededed;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s;
+  outline: none;
+  padding-left: 8px;
+  padding-top: 4px;
+  padding-right: 8px;
+  font-family: "Poppins";
+}
+
+/* username/password label spacement and color */
+
+.sendUserJoin #dataLabel {
+  display: block;
+  color: #a3a3a3;
+  font-size: 0.5rem;
+  font-weight: 800;
+  position: relative;
+  bottom: 27px;
+  left: 15px;
+  transition: 0.3s;
+}
+
+/* -------- buttons for social media login / size + background + colours + borders customizing ----------*/
+
+.socialMediaLogin button {
+  margin-top: 10px;
+  width: 32.1%;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 5px;
+  color: white;
+}
+
+.facebook-button {
+  background-color: hsl(214, 89%, 52%);
+  border: none;
+  box-shadow: inset 0 0 0 2px rgb(23, 113, 230);
+  transition: 0.1s;
+}
+
+.google-button {
+  background: white;
+  border: none;
+  box-shadow: inset 0 0 0 2px rgb(237, 237, 237);
+  transition: 0.1s;
+}
+
+.apple-button {
+  background-color: #000;
+  border: none;
+  box-shadow: inset 0 0 0 2px #0d0d0d;
+  transition: 0.1s;
+}
+
+/* customizing "keep logged in" checkbox - sizes, borders and default colours */
+
+.checkbox {
+  font-size: 10px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox input ~ label:before {
+  background-color: #e9e9e9;
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border: solid 1px transparent;
+  vertical-align: middle;
+  margin-bottom: 3px;
+  margin-right: 7px;
+  border-radius: 3px;
+}
+
+/* ------------ submit button ------------- */
+
+/* button adjustment for sizing, spacement & background */
+
+.loginButton {
+  text-align: center;
+  margin-top: 50%;
+}
+
+.loginButton button {
+  border: none;
+  background-color: #d13639;
+  border-radius: 17px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* setting arrow size and color */
+
+.loginButton i {
+  font-size: 36px;
+  color: #e9e9e9;
+  padding: 10px 3px 10px 3px;
+}
+
+/* --------- sign up / forgot password session ---------- */
+
+.extraInfo {
+  margin-top: 19%;
+  margin-bottom: 0;
+}
+
+a {
+  color: #b6b6b6;
+  font-size: 9px;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* hover for sign up / forgot password session */
+
+a:hover {
+  color: #000;
+}
