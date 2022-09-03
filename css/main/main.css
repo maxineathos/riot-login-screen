@@ -20,7 +20,7 @@ body {
 .container {
   display: flex;
   max-width: 100%;
-  height: auto;
+  height: 100vh;
   flex-wrap: nowrap;
 }
 
