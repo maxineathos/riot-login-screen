@@ -35,9 +35,11 @@
   height: 40px;
   border-radius: 12px;
   margin-right: 20px;
-  margin-top: 20px;
-  background-color: rgba(102, 102, 102, 0.1);
+  margin-top: 23px;
+  background-color: rgba(102, 102, 102, 0.2);
   color: rgba(266, 266, 266, 0.6);
+  -webkit-box-shadow: 1px 0px 7px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 0px 7px 5px rgba(0, 0, 0, 0.1);
   border: none;
 }
 
