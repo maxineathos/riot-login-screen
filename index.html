@@ -1,76 +1,116 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login | Riot Games</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="assets/fonts/fonts.css" />
+    <link rel="stylesheet" href="css/main/main.css" />
+    <link rel="stylesheet" href="css/animations/animations.css" />
+    <link rel="stylesheet" href="css/wallpaper/wallpaper.css" />
+    <link rel="stylesheet" href="css/media/media.css" />
+    <link
+      rel="shortcut icon"
+      href="img/favicon/Riot_Games_logo_icon.webp"
+      type="image/x-icon"
+    />
+    <title>Iniciar sessão</title>
   </head>
+
   <body>
-    <!-- main -->
+    <!-- container -->
     <div class="container">
-      <div class="form">
-        <div class="header">
-          <img class="logo" src="img/logo.png" alt="Riot Games logo" />
-          <h3>Fazer login</h3>
-        </div>
+      <div class="interactiveElement">
+        <!-- login form -->
+        <div class="formElement">
+          <!-- riot logo + login title -->
+          <div class="information">
+            <!-- riot logo size adjustment -->
+            <img style="width: 90px" src="img/logo/logo.png" alt="" />
+            <h3>Fazer login</h3>
+          </div>
 
-        <!-- form -->
-        <div class="data">
-          <form action="#">
-            <!-- username -->
-            <label for="username"></label>
+          <!-- joining data form -->
+          <div class="sendUserJoin">
+            <!-- email and password -->
             <input
-              class="input-data"
-              type="email"
+              type="username"
+              name="username"
               id="username"
-              placeholder="NOME DE USUÁRIO"
+              onchange="toggleButton()"
+              onblur="floatLabel(0)"
+              autocomplete="off"
+              class="userData"
+              autocorrect="off"
+              spellcheck="off"
+              required
             />
-            <!-- password -->
-            <label for="password"></label>
+            <label id="dataLabel" for="username">NOME DE USUÁRIO</label>
             <input
-              class="input-data"
               type="password"
+              name="password"
               id="password"
-              placeholder="SENHA"
+              class="userData"
+              onchange="toggleButton()"
+              onblur="floatLabel(1)"
+              autocomplete="off"
+              autocorrect="off"
+              spellcheck="off"
+              required
             />
-          </form>
-          <!-- social media login + checkbox + submit button-->
-          <div class="social-media-login">
-            <button class="facebook-button">
-              <i class="bi bi-facebook"></i>
-            </button>
+            <label id="dataLabel" for="password">SENHA</label>
 
-            <button class="google-button">
-              <img class="google" src="img/google.png" alt="" />
-            </button>
+            <!-- social media login -->
+            <div class="socialMediaLogin">
+              <button class="facebook-button">
+                <i class="bi bi-facebook"></i>
+              </button>
+              <button class="google-button">
+                <img
+                  style="width: 12px"
+                  src="img/social-network-icons/google.png"
+                  alt=""
+                />
+              </button>
+              <button class="apple-button">
+                <i class="bi bi-apple"></i>
+              </button>
+            </div>
 
-            <button class="apple-button">
-              <i class="bi bi-apple"></i>
-            </button>
+            <!-- checkbox for keep login -->
+            <div class="checkbox">
+              <input type="checkbox" name="keepLogged" id="keepLogged" />
+              <label for="keepLogged">Manter login</label>
+            </div>
+
+            <!-- login button -->
+            <div class="loginButton">
+              <button id="loginButton" disbaled>
+                <i class="bi bi-arrow-right-short"></i>
+              </button>
+            </div>
+
+            <!-- footer -->
+            <div class="extraInfo">
+              <a href="#">NÃO CONSEGUE INICIAR SESSÃO?</a>
+              <a href="#">CRIAR CONTA</a>
+            </div>
           </div>
         </div>
-        <!-- checkbox -->
-        <div class="checkbox">
-          <input type="checkbox" />
-          <label for="keepLogin">Manter login</label>
-        </div>
-        <!-- submit button -->
-        <button class="submit-button">
-          <i class="bi bi-arrow-right-short"></i>
-        </button>
-
-        <!-- footer -->
-        <footer>
-          <a href="#"> NÃO CONSEGUE INICIAR SESSÃO?</a>
-          <a href="#">CRIAR CONTA</a>
-          <span class="version">V57.0.0</span>
-        </footer>
       </div>
 
-      <div class="wallpaper"></div>
+      <!-- udyr wallpaper -->
+      <div class="wallpaper">
+        <i class="bi bi-exclamation-diamond-fill"></i>
+        <div>
+          <button class="loginInfo">
+            <i class="bi bi-person-fill"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- js -->
+      <script src="js/script.js"></script>
     </div>
   </body>
 </html>
