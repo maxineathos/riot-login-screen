@@ -5,7 +5,7 @@ Esse projeto é uma recriação de interface, usando como base a tela de login d
 
 ## Projeto em tempo real
 
-Visite o projeto, é só clicar [neste link](https://j4odev.github.io/riot-login-screen).
+Visite o projeto, é só clicar [neste link](https://maxheartstech.github.io/riot-login-screen).
 
 ## Linguagens e frameworks
 
@@ -34,6 +34,3 @@ Também, é possível visualizar o projeto em dispositivos mobiles.
 - Tooltip ao passar o mouse em cima do botão de alerta
 - Menu ao clicar no ícone de usuário
 - Media query para modo paisagem em dispositivos mobiles.
-
-Gostaria de contribuir? Mande um email para joao.lucas.contato@hotmail.com.
-
