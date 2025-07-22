@@ -5,7 +5,7 @@ Esse projeto é uma recriação de interface, usando como base a tela de login d
 
 ## Projeto em tempo real
 
-Visite o projeto, é só clicar [neste link](https://maxheartstech.github.io/riot-login-screen).
+Visite o projeto, é só clicar [neste link](https://maxineathos.github.io/riot-login-screen).
 
 ## Linguagens e frameworks
 
